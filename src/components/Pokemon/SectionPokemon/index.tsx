@@ -28,10 +28,10 @@ const SectionPokemon: React.FC<RouteComponentProps> = ({ match }) => {
 
   return (
     <>
-      <Title name={`Покемон: ${name}`} />
+      <Title name={`Покемон: ${data.name}`} />
       <div className="section">
         <div className="section_ico">
-          <CardPokemon name={name} img={sprites.front_default} />
+          <CardPokemon name={data.name} img={sprites.front_default} />
         </div>
 
         <div className="parameters">

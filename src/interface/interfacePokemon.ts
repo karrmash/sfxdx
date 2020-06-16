@@ -39,5 +39,6 @@ export interface IDataAbilities {
         pokemon: {
             name: string
         }
-    }[]
+    }[],
+    name:string
 }

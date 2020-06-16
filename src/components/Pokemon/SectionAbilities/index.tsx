@@ -50,7 +50,7 @@ const SectionAbilities: React.FC<RouteComponentProps> = ({ match }) => {
 
   return (
     <>
-      <Title name={`Способность: ${abilities}`} />
+      <Title name={`Способность: ${data.name}`} />
       {dataEffect()}
       <div className="subtitle" title="Список покемонов, которые обладают данной способностью">Список покемонов</div>
       <div className="container_list_pokemon">
