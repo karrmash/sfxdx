@@ -1,0 +1,46 @@
+@import "./src/index"
+
+.element
+  @include display_flex
+  border: $border
+  border-radius: $radius
+  width: 300px
+  height: 300px
+  margin: 0 5px 15px 5px
+  position: relative
+  justify-content: center
+  align-items: center
+  &:before
+    width: 40px
+    height: 40px
+    content: ""
+    background:
+      image: url("./img/pokeball.png")
+    position: absolute
+    bottom: 10px
+    right: 10px
+  &:after
+    width: 300px
+    height: 56px
+    content: ""
+    position: absolute
+    top: 10px
+    background:
+      image: url("./img/pokemon.png")
+      repeat: no-repeat
+      position: center
+
+.hover
+  cursor: pointer
+  &:hover
+    background-color: $color
+    font-weight: bold
+
+
+.image
+  width: 150px
+  height: 150px
+
+
+.text
+  font-size: $fontSizeTitle

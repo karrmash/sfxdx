@@ -1,0 +1,21 @@
+@import "./src/index"
+
+.container_error
+  @include display_flex
+  justify-content: center
+  align-items: center
+  min-height: $height
+
+.error
+  @include text_action
+  color: $colorError
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    background-image: url("./img/error.png")
+    width: 286px
+    height: 194px
+    bottom: 36px
+    right: 0
+

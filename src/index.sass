@@ -1,0 +1,76 @@
+// Основной цвет - используется на ссылках, при наведении на карточки, рамки, в loader-e
+$color: #c1b547
+
+// Цвет ошибки
+$colorError: #ff0000
+
+// Максимальная ширина
+$maxWidth: 1000px
+
+// Высота для loader, error, страницы покемона
+$height: 500px
+
+// Размер шрифта основного текста
+$fontSizeText: 16px
+
+// Размер шрифта для навигации, текстов loader и error
+$fontSizeAction: 18px
+
+// Размер шрифта заголовков и текста в карточках
+$fontSizeTitle: 40px
+
+// Размер шрифта подзаголовков
+$fontSizeSubTitle: 23px
+
+// Рамка
+$border: 1px solid $color
+
+// Радиус рамок
+$radius: 5px
+
+body
+   margin: 0
+   padding: 0
+   font:
+      family: cursive
+      size: $fontSizeText
+   color: #4e4e4e
+   cursor: default
+
+
+@mixin display_flex
+   display: flex
+
+@mixin text_action
+   font:
+      size: $fontSizeAction
+      weight: bold
+
+@mixin link
+   color: $color
+   text-decoration: underline
+   cursor: pointer
+   &:hover
+      text-decoration: none
+
+
+.container
+   @include display_flex
+   margin: 10px auto
+   padding: 0 10px
+
+.column
+   flex-direction: column
+
+.max_width_800
+   max-width: $maxWidth - 200px
+
+.max_width_1000
+   max-width: $maxWidth
+
+.navigation
+   height: 40px
+   border-bottom: $border
+   margin-bottom: 20px
+
+

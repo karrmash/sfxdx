@@ -1,0 +1,21 @@
+@import "./src/index"
+
+.line_ab
+  @include display_flex
+  font-size: $fontSizeText
+  margin: 0 0 10px 0
+
+.name_ab
+  min-width: 200px
+
+.value_ab
+  color: $color
+
+.link
+  @include link
+  margin-right: 15px
+  font-size: $fontSizeText
+
+.container_list_pokemon
+  @include display_flex
+  flex-wrap: wrap
