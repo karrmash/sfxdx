@@ -16,7 +16,7 @@ const arrayAbilities: {key:string, name:string}[] = [
   { key: 'height', name: 'Высота' },
   { key: 'weight', name: 'Вес' },
   { key: 'base_experience', name: 'Базовый опыт' },
-  { key: 'order', name: 'Заказ' },
+  { key: 'order', name: 'Порядок' },
   { key: 'types', name: 'Типы' },
 ];
 
